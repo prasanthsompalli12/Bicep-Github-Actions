@@ -39,3 +39,10 @@ jobs:
         with:
           # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
           creds: ${{ secrets.AKS_SPN }}
+          
+      - name: Az Deploy
+              #working-directory: '$({github.workspace}}/src/'
+        run: |
+             az deployment group create --resource-group ICONpoc2 --template-file ./Cluster.bicep
+          
+    
