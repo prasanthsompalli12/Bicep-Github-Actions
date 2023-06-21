@@ -9,7 +9,7 @@ param location string = resourceGroup().location
  
 
 @description('Optional DNS prefix to use with hosted Kubernetes API server FQDN.')
-param dnsPrefix string = ps
+param dnsPrefix string = 'ps'
 
  
 
