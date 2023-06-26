@@ -1,5 +1,5 @@
 @description('The name of the Managed Cluster resource.')
-param clusterName string = 'aks101clusterpptest'
+param clusterName string = 'aks123clusterps'
 
  
 
